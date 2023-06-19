@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing-page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slideshow.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./images/Group-221.ico" type="image/x-icon">
+
+  </head>
+  <body>
+    <main id="main-container">
+      <header>
+        <div class="head-menu">
+          <ul>
+            <li id="bars">
+              <a href="#">
+                <i class="fas fa-bars" aria-hidden="true" title="menu"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="head-logo"><a href=""><img src="./images/logo-noname.svg" alt="" class="logo"></a></div>
+        </div>
+        <div id="toggleDiv" class="hidden-menu">
+          <div class="menu-content">
+            <nav>
+              <ul>
+                <li>About</li>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Help</li>
+                <li>Contact</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <ul class="desktop-menu">
+          <li class="menu-item">About</li>
+          <li class="menu-item">Features</li>
+          <li class="menu-item">Pricing</li>
+          <li class="menu-item">Help</li>
+          <li class="menu-item">Contact</li>
+          <li>
+            <button class="login-btn">Login</button>
+          </li>
+        </ul>
+      </header>
+      <div class="content">
+        <section class="get-start">
+          <img src="./images/image1.jpg" class="top-image" />
+          <div class="description">
+            <h2>Prisense, know your competitors, maximize gains!</h2>
+            <p>
+              Provides you with detailed competitor price insights, highlights
+              gaps and provides timely alerts
+            </p>
+            <button class="button">Get Started</button>
+          </div>
+        </section>
+        <section class="about">
+          <h3 id="about">About</h3>
+          <p>
+            Pricing poses a daily challenge in today's retail market,
+            particularly for high-profit items with volatile price fluctuations.
+            However, conducting manual price surveys on a daily basis is a
+            laborious task for business owners. To solve this pain point, one
+            solution is to implement automated price monitoring. Therefore,
+            Prisense offers detailed competitor price insights, highlights gaps
+            and provides timely alerts. Use this valuable information to
+            fine-tune your pricing strategy and gain a competitive edge,
+            maximizing your profits through business intelligence.
+          </p>
+        </section>
+        <section class="features">
+          <h3>App Features</h3>
+          <article>
+            <img src="./images/image2.jpg" alt="" />
+            <div class="app-info">
+              <h4>Import Inventory</h4>
+              <p>
+                It is convenient to use Pricesense since it enables you to
+                import your inventory simply uploading a file. Pricesense will
+                then automatically scan all of the items from the file rather
+                than requiring you to manually enter them.
+              </p>
+            </div>
+          </article>
+          <article>
+            <img src="./images/image3.jpg" alt="" />
+            <div class="app-info">
+              <h4>Price Monitoring</h4>
+              <p>
+                With business intelligence, you can examine and compare prices
+                from all rivals, use this important data to precisely adapt your
+                pricing strategy and acquire a competitive advantage, and
+                maximise your earnings.
+              </p>
+            </div>
+          </article>
+          <article>
+            <img src="./images/omage4.jpg" alt="" />
+            <div class="app-info">
+              <h4>Timely Alerts</h4>
+              <p>
+                You'll receive alerts when competitors' prices change, ensuring
+                that you never miss out any value competition.
+              </p>
+            </div>
+          </article>
+        </section>
+        <section class="test-comment">
+          <h3>Testimonials</h3>
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides">
+              <p>
+                Because of shop management, I don't have time to examine price
+                adjustments, but Pricesense's alerts let me effortlessly alter
+                pricing and keep me one step ahead of my competition. I like how
+                it has helped me understand my competitors.
+              </p>
+
+              <p class="author">- John Keats</p>
+            </div>
+
+            <div class="mySlides">
+              <p>
+                Because of shop management, I don't have time to examine price
+                adjustments, but Pricesense's alerts let me effortlessly alter
+                pricing and keep me one step ahead of my competition. I like how
+                it has helped me understand my competitors.
+              </p>
+              <p class="author">- Ernest Hemingway</p>
+            </div>
+
+            <div class="mySlides">
+              <p>
+                Because of shop management, I don't have time to examine price
+                adjustments, but Pricesense's alerts let me effortlessly alter
+                pricing and keep me one step ahead of my competition. I like how
+                it has helped me understand my competitors.
+              </p>
+              <p class="author">- Thomas A. Edison</p>
+            </div>
+
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <!-- Dots/bullets/indicators -->
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </section>
+        <section class="team">
+          <h3>Our team</h3>
+          <div class="team-members">
+            <div class="team-member">
+              <img src="./images/IMG_0784.jpg" alt="" />
+              <div class="meta-data">
+                <div class="pm">
+                  <h4 class="name">Anshul Gupta</h4>
+                </div>
+                <div class="pm"></div>
+                <h5 class="describe">Front-end Developer</h5>
+                 <h5 class="describe">Project Manager</h5>
+              </div>
+            </div>
+            <div class="team-member">
+              <img src="./images/IMG_0788.jpg" alt="" />
+              <div class="meta-data">
+                <div class="pm">
+                  <h4 class="name">Sean Ji</h4>
+                </div>
+                <h5 class="describe">Full Stack developer</h5>
+              </div>
+            </div>
+            <div class="team-member">
+              <img src="./images/IMG_0787.jpg" alt="" />
+              <div class="meta-data">
+                <div class="pm">
+                  <h4 class="name">Hmoon Aung</h4>
+                </div>
+                <div class="pm">
+                  <h5 class="describe">Lead Developer</h5>
+                </div>
+                <h5>Full Stack Developer</h5>
+              </div>
+            </div>
+            <div class="team-member">
+              <img src="./images/IMG_0789.jpg" alt="" />
+              <div class="meta-data">
+                <h4 class="name">Binazir Farokhi</h4>
+               
+                <h5 class="describe">Front-end Developer</h5>
+              </div>
+            </div>
+            <div class="team-member">
+              <img src="./images/IMG_0786.jpg" alt="" />
+              <div class="meta-data">
+                <div class="pm">
+                  <h4 class="name">Celia Chang</h4>
+                </div>
+                <div class="pm">
+                  <h5 class="describe">Lead Desinger</h5>
+                </div>
+                <h5>Ux/UI designer</h5>
+              </div>
+            </div>
+            <div class="team-member">
+              <img src="./images/IMG_0783.jpg" alt="" />
+              <div class="meta-data">
+                <h4 class="name">Snehjot Saini</h4>
+                <h5>Ux/UI designer</h5>
+              </div>
+            </div>
+            <div class="team-member">
+              <img src="./images/IMG_0790.jpg" alt="" />
+              <div class="meta-data">
+                <div class="pm">
+                  <h4 class="name">Neo Yu</h4>
+                </div>
+                <h5>Ux/UI designer</h5>
+              </div>
+            </div>
+            <div class="team-member">
+              <img src="./images/IMG_0785.jpg" alt="" />
+              <div class="meta-data">
+                <h4 class="name">Harpreet Kaur</h4>
+                <h5>Ux/UI designer</h5>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="questions">
+          <h3>FAQs</h3>
+          <div class="faq-form">
+            <div id="price" class="form-input">
+              <p>What is Princesense?</p>
+              <i
+                class="fas fa-plus"
+                id="priceButton"
+                aria-hidden="true"
+                title="menu"
+              ></i>
+            </div>
+            <p id="priceText" class="hide faq-text">
+              Pricesense is the price comarison that gives you detailed
+              comparison that gives you detailed compatitor price insights,
+              highlights gaps and provides timely alerts.
+            </p>
+            <div id="why" class="form-input">
+              <p>Why is Pricesense?</p>
+              <i
+                class="fas fa-plus"
+                id="whyButton"
+                aria-hidden="true"
+                title="menu"
+              ></i>
+            </div>
+            <p id="whyText" class="hide faq-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reprehenderit sint alias nihil error impedit, velit at quas
+              ratione distinctio commodi. Doloribus nesciunt ipsam unde et,
+              aliquam nulla aut asperiores tempore provident quos ratione eaque
+              nisi deleniti sapiente nihil saepe, harum delectus maiores fugiat
+              repellendus voluptate quis molestiae? Esse exercitationem
+              recusandae quaerat illum consequatur error laboriosam nostrum
+              nobis architecto! Eos voluptatem at veniam cum vel?
+            </p>
+            <div id="how" class="form-input">
+              <p>How to use Pricesense?</p>
+              <i
+                class="fas fa-plus"
+                id="howButton"
+                aria-hidden="true"
+                title="menu"
+              ></i>
+            </div>
+            <p id="howText" class="hide faq-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+              numquam beatae aliquid aut tempora quam repudiandae distinctio
+              quas earum mollitia molestiae suscipit veritatis alias laudantium
+              voluptatibus a ea, hic blanditiis accusamus. Explicabo voluptatem
+              eos officia!
+            </p>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <h4>Increase the value of your prices right away!</h4>
+        <div class="footer-wrapper">
+          <p>
+            Want to stay ahead of your peers? Sign up today to monitor prices
+            and provide valuable insights to enhance your pricing strategy.
+          </p>
+          <form>
+            <input
+              placeholder="Enter Your Email"
+              name="demo-email"
+              id="demoEmail"
+            />
+            <button>Get a Demo</button>
+          </form>
+        </div>
+        <section class="rights">
+          copyright @2023 Pricesense | All Rights Reserved
+        </section>
+      </footer>
+    </main>
+  </body>
+</html>
